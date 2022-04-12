@@ -3,7 +3,7 @@ description: 'Sample code for a composite action that requires some version of P
 runs:
   using: "composite"
   steps:
-  - using: actions/setup-python@v2
+  - uses: actions/setup-python@v2
     with:
       python-version: '3.x'
   - run: python --version
