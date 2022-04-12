@@ -7,4 +7,5 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: brcrista/setup-python-composite-demo@main
+      - uses: actions/checkout@v2
+      - uses: ./
