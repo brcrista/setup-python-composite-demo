@@ -1,0 +1,10 @@
+name: 'setup-python-composite'
+description: 'Sample code for a composite action that requires some version of Python'
+runs:
+  using: "composite"
+  steps:
+  - using: actions/setup-python@v2
+    with:
+      python-version: '3.x'
+  - run: python --version
+    shell: bash
